@@ -9,10 +9,12 @@ spec:
   selector:
     matchLabels:
       app: guestbook-ui
+      deployedby: argo
   template:
     metadata:
       labels:
         app: guestbook-ui
+        deployedby: argo
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
