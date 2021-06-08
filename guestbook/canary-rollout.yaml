@@ -3,7 +3,7 @@ kind: Rollout
 metadata:
   name: example-rollout
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
